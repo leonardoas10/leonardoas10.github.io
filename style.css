@@ -1,0 +1,185 @@
+html {
+    background-color: white;
+    font-size: 100%;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    position: fixed;
+}
+ a {
+    text-decoration:none;
+    color: yellow;
+ }
+ a:active, .doyouwant input:active {
+     color: red;
+ }
+ /*modal*/
+ .backdrop {
+     display: none;
+ }
+ .modal {
+     display: none;
+ }
+ 
+/*header*/
+.fixed-bar {
+    height: 57px;
+}
+.page-title {
+    background-color: blue;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    padding: 10px 0;
+    text-align: center;
+    color: yellow;
+}
+.ring {
+    position: fixed;
+    z-index: 100;
+}
+.ringt {
+    position: fixed;
+    float: right;
+    top: 0;
+    right: 0;
+}
+
+/*nav*/
+.nava {
+    text-align: center;
+    padding: 10px; 
+    text-transform: uppercase;
+    background-image: url("../Practica/images/background.jpg");
+}
+.nava li {
+    display: inline-block;
+    
+    font-size: 16px;
+    font-size: 0.9rem;
+    margin: 0 20px;
+}
+
+/*modal*/
+.backdrop {
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    background: white;
+    padding: 10px;
+    width: 500px;
+    height: 150px;
+    top: 100px;
+    z-index: 1;
+    left: calc(50% - 250px);
+    border-radius: 10px;
+}
+.modal  h1, p{
+    margin: 0;
+    text-align: center;
+}
+.modal button {
+    position: absolute;
+    top: 85px;
+    left: calc(50% - 75px);
+    color: yellow;
+    background-color: blue;
+    border-radius: 10px;
+    border: 2px solid yellow;
+    cursor: pointer;
+    width: 150px;
+    font-size: x-large;
+}
+.modal img {
+    background-color: white;
+}
+
+
+/*main*/
+
+.text {
+    background-color: rgb(34, 176, 219);
+    border: 1px solid blue;
+    display: flex;
+    flex-wrap: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.sonic-images{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    /*padding: 0 150px;*/
+}
+
+.sonic-images img {
+    width: 256px;
+    border: 1px solid blue;
+}
+
+.text-images {
+    padding: 0;
+    background-color: rgb(34, 176, 219);
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+}
+.text-images p{    
+    margin: 0 30px;
+}
+
+/*footer*/
+footer {
+    clear: both;
+}
+.rodapie {
+    background-image: url("../Practica/images/background.jpg");
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 24px;
+}
+.doyouwant {
+    position: fixed;
+    width: 100%;
+    padding: 0 5px;
+    margin: 0;
+    text-align: center;
+    bottom: 30px;
+}
+.doyouwant input {
+    margin: 0;
+    color: yellow;
+    background-color: blue;
+    border-radius: 10px;
+    border: 2px solid yellow;
+    cursor: pointer;
+    font-size: large;
+}
+
+@media (min-width: 600px) {
+    .nava li {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 513px) {
+    .sonic-images img {
+        width: 100px;
+    } 
+}
