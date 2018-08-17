@@ -55,7 +55,7 @@ body{
     text-align: center;
     padding: 10px; 
     text-transform: uppercase;
-    background-image: url("../Practica/images/background.jpg");
+    background-image: url("images/background.jpg");
 }
 .nava li {
     display: inline-block;
@@ -149,7 +149,7 @@ footer {
     clear: both;
 }
 .rodapie {
-    background-image: url("../Practica/images/background.jpg");
+    background-image: url("images/background.jpg");
     position: fixed;
     bottom: 0;
     width: 100%;
