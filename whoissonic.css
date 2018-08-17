@@ -1,0 +1,21 @@
+/*main*/
+.imgphrase {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    border-radius: 10px;
+    width: 205px;
+    font-size: x-large;
+    text-align: center;
+    background: white
+}
+
+.whoissonic p {
+    margin: 0 15px 0 10px;
+    text-indent: 1.8em;
+    text-align: justify;
+    line-height: 25px;
+}
+
+/*footer*/
