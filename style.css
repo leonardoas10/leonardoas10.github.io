@@ -5,9 +5,8 @@ body {
     text-transform: uppercase;
     letter-spacing: .5em;
     top: 15%;
-    background: linear-gradient(to right, red, yellow);
+    /*background: linear-gradient(to right, red, yellow);*/
 }
-
 h3 {
     font: 'Raleway', sans-serif;
     font-size: 21px;
@@ -19,7 +18,6 @@ h3 {
     letter-spacing: .5em;
     top: 300px;
 }
-
 h4 {
     font: 'Raleway', sans-serif;
     font-size: 50px;
@@ -34,14 +32,17 @@ h4 {
 .color1, .color2{
     border-radius: 50%;
     padding: 0;
-    margin-right: 15px;
+    margin-right: 20px;
     width: 55px;
     height: 55px;
-    transition: width 0.5s;
     border: none;
     cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
     /*-webkit-appearance: none;*/
 }
+
 .color1::-webkit-color-swatch, .color2::-webkit-color-swatch {
     border: none;
     border-radius: 50px;
@@ -53,7 +54,8 @@ h4 {
     padding: 0;
   }
 .color1:hover, .color2:hover {
-    width: 7%
+       transform: scale(1.5);
+    -webkit-transform: scale(1.5);
 }
 .random {
     font-family: "Raleway", "sans-serif";
@@ -66,10 +68,12 @@ h4 {
     cursor: pointer;
     position: relative;
     top: 40px;
-    transition: font-size 0.5s;
+    transition:0.5s;
+    -webkit-transition: 0.5s;
 }
 
 .random:hover {
-    font-size: 26px;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
 }
 

@@ -3,7 +3,6 @@ let color1 = document.querySelector(".color1");
 let color2 = document.querySelector(".color2"); 
 let css = document.querySelector("h3");
 let random = document.querySelector(".random");
-let radiusButtom = document.getElementById("radiusButtom");
 
 color1.addEventListener("input", setGradient);
 color2.addEventListener("input", setGradient);
@@ -23,20 +22,16 @@ function setGradient() {
     + color2.value
     + ")";
 
-    css.textContent = body.style.background + ";";
-    sameColor();
+    css.textContent = body.style.background;
 }
 
 function setRandColor() {
 	color1.value = "#"+(Math.random()*0xFFFFFF<<0).toString(16); 
 	color2.value = "#"+(Math.random()*0xFFFFFF<<0).toString(16);
-	setGradient(); 
+    setGradient(); 
 }
 
-function sameColor (){
-   color1.style.backgroundColor = color1.value;
-   color2.style.backgroundColor = color2.value;
-}
+
 
 
  
