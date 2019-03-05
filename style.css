@@ -5,30 +5,36 @@ body {
     text-transform: uppercase;
     letter-spacing: .5em;
     top: 15%;
-    /*background: linear-gradient(to right, red, yellow);*/
 }
+
+h1, h2 {
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h3 {
-    font: 'Raleway', sans-serif;
     font-size: 21px;
-    color: rgba(0,0,0,.5);
-    position: fixed;
     width: 100%;
-    text-align: center;
-    text-transform: uppercase;
     letter-spacing: .5em;
-    top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    height: 10vh
 }
+
 h4 {
-    font: 'Raleway', sans-serif;
     font-size: 50px;
-    color: rgba(0,0,0,.5);
-    position: fixed;
     width: 100%;
-    text-align: center;
-    text-transform: uppercase;
     letter-spacing: .5em;
-    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh
 }
+
 .color1, .color2{
     border-radius: 50%;
     padding: 0;
@@ -41,7 +47,6 @@ h4 {
     transition: 0.5s;
     -webkit-transition: 0.5s;
     opacity: 0.7;
-    /*-webkit-appearance: none;*/
 }
 
 .color1::-webkit-color-swatch, .color2::-webkit-color-swatch {
@@ -79,3 +84,11 @@ h4 {
     -webkit-transform: scale(1.5);
 }
 
+@media only screen and (max-width: 695px) {
+    h2, h3, .random {
+        font-size: 16px;
+    }
+    h1, h4 {
+        font-size: 25px;
+    }
+}
