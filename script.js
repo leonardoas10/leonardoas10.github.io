@@ -26,9 +26,17 @@ function setGradient() {
 }
 
 function setRandColor() {
-	color1.value = "#"+(Math.random()*0xFFFFFF<<0).toString(16); 
-	color2.value = "#"+(Math.random()*0xFFFFFF<<0).toString(16);
-    setGradient(); 
+
+    if (color1.value !== color2.value) {
+        color1.value = "#"+(Math.random()*0xFFFFFF<<0).toString(16); 
+        color2.value = "#"+(Math.random()*0xFFFFFF<<0).toString(16);
+        setGradient(); 
+    }
+    else {
+        color1.value = "#ffff00";
+        color2.value = "#00ffff"; 
+        setGradient();
+    }
 }
 
 
